@@ -1,15 +1,15 @@
 // Ignore Spelling: geopotential
 
-namespace ktsu.io.Physics.Atmospherics;
+namespace ktsu.Physics.Atmospherics;
 
-using ktsu.io.PhysicalQuantity.Density;
-using ktsu.io.PhysicalQuantity.Length;
-using ktsu.io.PhysicalQuantity.MolarMass;
-using ktsu.io.PhysicalQuantity.Pressure;
-using ktsu.io.PhysicalQuantity.Temperature;
-using ktsu.io.Physics.Earth;
-using ktsu.io.Physics.Thermodynamics;
-using ktsu.io.SignificantNumber;
+using ktsu.PhysicalQuantity.Density;
+using ktsu.PhysicalQuantity.Length;
+using ktsu.PhysicalQuantity.MolarMass;
+using ktsu.PhysicalQuantity.Pressure;
+using ktsu.PhysicalQuantity.Temperature;
+using ktsu.Physics.Earth;
+using ktsu.Physics.Thermodynamics;
+using ktsu.SignificantNumber;
 
 public static class Atmospherics
 {

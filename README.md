@@ -1,1 +1,1 @@
-# ktsu.io.Physics.Atmospherics
+# ktsu.Physics.Atmospherics

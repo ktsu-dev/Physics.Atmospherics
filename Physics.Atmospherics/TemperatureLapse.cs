@@ -1,10 +1,10 @@
-namespace ktsu.io.Physics.Thermodynamics;
+namespace ktsu.Physics.Thermodynamics;
 
 using System.Numerics;
-using ktsu.io.PhysicalQuantity;
-using ktsu.io.PhysicalQuantity.Generic;
-using ktsu.io.PhysicalQuantity.Length;
-using ktsu.io.PhysicalQuantity.Temperature;
+using ktsu.PhysicalQuantity;
+using ktsu.PhysicalQuantity.Generic;
+using ktsu.PhysicalQuantity.Length;
+using ktsu.PhysicalQuantity.Temperature;
 
 /// <summary>
 /// Represents a temperature lapse quantity measured in kelvins per meter.

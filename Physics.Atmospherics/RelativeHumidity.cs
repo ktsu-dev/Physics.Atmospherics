@@ -1,9 +1,9 @@
-namespace ktsu.io.Physics.Thermodynamics;
+namespace ktsu.Physics.Thermodynamics;
 
 using System.Numerics;
-using ktsu.io.PhysicalQuantity;
-using ktsu.io.PhysicalQuantity.Generic;
-using ktsu.io.SignificantNumber;
+using ktsu.PhysicalQuantity;
+using ktsu.PhysicalQuantity.Generic;
+using ktsu.SignificantNumber;
 
 /// <summary>
 /// Represents a relative humidity quantity.
