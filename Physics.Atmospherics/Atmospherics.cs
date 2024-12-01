@@ -7,6 +7,7 @@ using ktsu.PhysicalQuantity.Length;
 using ktsu.PhysicalQuantity.MolarMass;
 using ktsu.PhysicalQuantity.Pressure;
 using ktsu.PhysicalQuantity.Temperature;
+using ktsu.Physics.Constants;
 using ktsu.Physics.Earth;
 using ktsu.Physics.Thermodynamics;
 using ktsu.SignificantNumber;
@@ -37,7 +38,6 @@ public static class Atmospherics
 		ArgumentNullException.ThrowIfNull(geometricAltitude);
 		var geopotentialAltitude = Earth.GeopotentialAltitude(geometricAltitude);
 		return TemperatureAtSeaLevel - (TemperatureLapse * geopotentialAltitude);
-
 	}
 
 	public static Pressure PressureAtAltitude(Length geometricAltitude)
@@ -50,13 +50,13 @@ public static class Atmospherics
 	{
 		ArgumentNullException.ThrowIfNull(geometricAltitude);
 
-		double p = PressureAtSeaLevel;
-		double t = TemperatureAtSeaLevel;
-		double g = Earth.GravityAtSeaLevel.ToMetersPerSecondSquared();
-		double l = TemperatureLapse;
-		double r = Constants.MolarGasConstantJoulesPerMoleKelvin.ToDouble();
-		double m = MolarMassOfDryAir.ToKilogramsPerMole();
-		double h = geometricAltitude.ToMeters();
+		var p = PressureAtSeaLevel;
+		var t = TemperatureAtSeaLevel;
+		var g = Earth.GravityAtSeaLevel;
+		var l = TemperatureLapse;
+		var r = Constants.MolarGasConstantJoulesPerMoleKelvin;
+		var m = MolarMassOfDryAir;
+		var h = geometricAltitude;
 
 		var lOnT = TemperatureLapse / TemperatureAtSeaLevel;
 		double gm = Earth.GravityAtSeaLevel * MolarMassOfDryAir;
@@ -73,6 +73,6 @@ public static class Atmospherics
 		ArgumentNullException.ThrowIfNull(geometricAltitude, nameof(geometricAltitude));
 		var pressure = PressureAtAltitude(geometricAltitude);
 		var temperature = TemperatureAtAltitude(geometricAltitude);
-		return Density.FromKilogramsPerCubicMeter(pressure.ToPascals() / (SpecificGasConstantOfDryAir.ToDouble() * temperature.ToKelvin()));
+		return (pressure / (SpecificGasConstantOfDryAir * temperature)).KilogramsPerCubicMeter();
 	}
 }
