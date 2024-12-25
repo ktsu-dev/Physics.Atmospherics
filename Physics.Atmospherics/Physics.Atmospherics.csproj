@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <PackageReference Include="ktsu.PhysicalQuantity" Version="1.0.0-alpha.15" />
+    <PackageReference Include="ktsu.PhysicalQuantity" Version="1.0.0-alpha.16" />
     <PackageReference Include="ktsu.Physics.Constants" Version="1.0.0-alpha.11" />
-    <PackageReference Include="ktsu.Physics.Earth" Version="1.0.0-alpha.14" />
-    <PackageReference Include="ktsu.Physics.Thermodynamics" Version="1.0.0-alpha.12" />
+    <PackageReference Include="ktsu.Physics.Earth" Version="1.0.0-alpha.15" />
+    <PackageReference Include="ktsu.Physics.Thermodynamics" Version="1.0.0-alpha.13" />
   </ItemGroup>
 </Project>
