@@ -58,14 +58,14 @@ public static class Atmospherics
 		var m = MolarMassOfDryAir;
 		var h = geometricAltitude;
 
-		var lOnT = TemperatureLapse / TemperatureAtSeaLevel;
-		double gm = Earth.GravityAtSeaLevel * MolarMassOfDryAir;
+		var lOnT = l / t;
+		double gm = g * m;
 		double rl = r * l;
 		double gmOnRl = gm / rl;
 		double lOnTH = lOnT * h;
 		double oneMinusLOnTH = 1 - lOnTH;
 
-		return PressureAtSeaLevel * Math.Pow(oneMinusLOnTH, gmOnRl);
+		return p * Math.Pow(oneMinusLOnTH, gmOnRl);
 	}
 
 	public static Density DensityAtAltitude(Length geometricAltitude)
