@@ -1,4 +1,6 @@
-// Ignore Spelling: geopotential
+// Copyright (c) ktsu.dev
+// All rights reserved.
+// Licensed under the MIT license.
 
 namespace ktsu.Physics.Atmospherics;
 
@@ -61,9 +63,9 @@ public static class Atmospherics
 		var lOnT = l / t;
 		double gm = g * m;
 		double rl = r * l;
-		double gmOnRl = gm / rl;
+		var gmOnRl = gm / rl;
 		double lOnTH = lOnT * h;
-		double oneMinusLOnTH = 1 - lOnTH;
+		var oneMinusLOnTH = 1 - lOnTH;
 
 		return p * Math.Pow(oneMinusLOnTH, gmOnRl);
 	}

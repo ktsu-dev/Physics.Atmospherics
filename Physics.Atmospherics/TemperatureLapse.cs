@@ -1,3 +1,7 @@
+// Copyright (c) ktsu.dev
+// All rights reserved.
+// Licensed under the MIT license.
+
 namespace ktsu.Physics.Thermodynamics;
 
 using System.Numerics;
@@ -16,6 +20,11 @@ public sealed record TemperatureLapse
 {
 	public static Temperature operator *(TemperatureLapse left, Length right) =>
 		IIntegralOperators<TemperatureLapse, Length, Temperature>.Integrate(left, right);
+
+	public static Temperature Multiply(TemperatureLapse left, TemperatureLapse right)
+	{
+		throw new NotImplementedException();
+	}
 }
 
 /// <summary>
