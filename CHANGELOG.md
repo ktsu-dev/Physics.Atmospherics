@@ -1,11 +1,4 @@
-## v1.0.0 (major)
+## v1.0.0
 
-- Renamed metadata files ([@matt-edmondson](https://github.com/matt-edmondson))
-- Add LICENSE template ([@matt-edmondson](https://github.com/matt-edmondson))
-- Refactor Atmospherics calculations to use physical quantity integration and derivation and update package references ([@matt-edmondson](https://github.com/matt-edmondson))
-- Remove obsolete build configuration files and scripts, including Directory.Build.props, Directory.Build.targets, and various PowerShell scripts for metadata and version management. Update Atmospherics, RelativeHumidity, and TemperatureLapse classes to include copyright information. ([@matt-edmondson](https://github.com/matt-edmondson))
-- Add project files. ([@matt-edmondson](https://github.com/matt-edmondson))
-- Add automation scripts for metadata and version management ([@matt-edmondson](https://github.com/matt-edmondson))
-- Refactor variable names in Atmospherics class ([@matt-edmondson](https://github.com/matt-edmondson))
-- Update project SDK version in Physics.Atmospherics.csproj ([@matt-edmondson](https://github.com/matt-edmondson))
-- Refactor namespace and package references for Physics.Atmospherics ([@matt-edmondson](https://github.com/matt-edmondson))
+Initial release or repository with no prior history.
+
