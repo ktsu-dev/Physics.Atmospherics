@@ -9,4 +9,5 @@
 - Refactor variable names in Atmospherics class ([@matt-edmondson](https://github.com/matt-edmondson))
 - Update project SDK version in Physics.Atmospherics.csproj ([@matt-edmondson](https://github.com/matt-edmondson))
 - Refactor namespace and package references for Physics.Atmospherics ([@matt-edmondson](https://github.com/matt-edmondson))
+- Remove .github\workflows\project.yml ([@matt-edmondson](https://github.com/matt-edmondson))
 - Update configuration files and scripts for improved build and test processes ([@matt-edmondson](https://github.com/matt-edmondson))
